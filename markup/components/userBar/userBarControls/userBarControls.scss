@@ -134,7 +134,7 @@
   left: 10px;
   width: 14px;
   height: 11px;
-  background: url("/static/images/assets/userBar/userBarControls/flag-sprite.png") -78px -10px;
+  background: url("%=static=%assets/userBar/userBarControls/flag-sprite.png") -78px -10px;
   transform: translateY(-50%);
   content: "";
 }
@@ -152,16 +152,16 @@
   content: "";
 } //-78px -10px;
 .icon-flag-it::before {
-  background: url("/static/images/assets/userBar/userBarControls/flag-sprite.png") -44px -41px;
+  background: url("%=static=%assets/userBar/userBarControls/flag-sprite.png") -44px -41px;
 }
 .icon-flag-es::before {
-  background: url("/static/images/assets/userBar/userBarControls/flag-sprite.png") -10px -41px;
+  background: url("%=static=%assets/userBar/userBarControls/flag-sprite.png") -10px -41px;
 }
 .icon-flag-fr::before {
-  background: url("/static/images/assets/userBar/userBarControls/flag-sprite.png") -44px -10px;
+  background: url("%=static=%assets/userBar/userBarControls/flag-sprite.png") -44px -10px;
 }
 .icon-flag-de::before {
-  background: url("/static/images/assets/userBar/userBarControls/flag-sprite.png") -10px -10px;
+  background: url("%=static=%assets/userBar/userBarControls/flag-sprite.png") -10px -10px;
 }
 
 //////////

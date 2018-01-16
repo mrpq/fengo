@@ -7,7 +7,7 @@ mixin footer(data)
             section.footer-section.footer-about
               heading.footer-heading
                 h3.footer-heading__title About Fengo Shop
-              img.footer-about__img(src="/static/images/assets/footer/assets/120x120.jpg" alt="About")
+              img.footer-about__img(src="%=static=%images/assets/footer/assets/120x120.jpg" alt="About")
               p.footer-about__text.
                 Morbi pretium odio in dapibus varius. Integer sagittis, tellus ac venenatis venenatis, ipsum ligula auctor lectus,suscipit
                 velit quam quis turpis. Fusce scelerisque aliquet commodo. Sed lobortis laoreet risus vitae tincidunt. Ut consectetur
@@ -22,10 +22,10 @@ mixin footer(data)
                   button.footer-slider-controls__arrow.arrow-next.js-from-blog-next
               div.footer-from-blog__slider.from-blog-slider.js-from-blog-slider
                 div.from-blog-slider__slide
-                  img.from-blog-slider__image(src="/static/images/assets/footer/assets/img-1-xs.jpg" alt="Blog Slide 1")
+                  img.from-blog-slider__image(src="%=static=%images/assets/footer/assets/img-1-xs.jpg" alt="Blog Slide 1")
                   p.from-blog-slider__slide-info Pellentesque vehicula urna purus
                 div.from-blog-slider__slide
-                  img.from-blog-slider__image(src="/static/images/assets/footer/assets/img-2-xs.jpg" alt="Blog Slide 2")
+                  img.from-blog-slider__image(src="%=static=%images/assets/footer/assets/img-2-xs.jpg" alt="Blog Slide 2")
                   p.from-blog-slider__slide-info Lorem ipsum dolor sit amet.
 
             section.footer-section
@@ -157,7 +157,7 @@ mixin footer(data)
         
 mixin favoriteSlide()
   div.favorite-slider__slide
-    img.favorite-slider__slide-image(src="/static/images/assets/footer/assets/fav-1-xs.jpg" alt="Blog Slide 1")
+    img.favorite-slider__slide-image(src="%=static=%images/assets/footer/assets/fav-1-xs.jpg" alt="Blog Slide 1")
     div.favorite-slider__slide-info.favorite-side-info
       p.favorite-slide-info__product-name
         a.favorite-slide-info__product-link(href="#")
@@ -171,7 +171,7 @@ mixin twitterItem()
   article.footer-twitter__item twitter-item
     heading.twitter-item__heading
       div.twitter-item__avatar
-        img(src="/static/images/assets/footer/assets/avatar.jpg")
+        img(src="%=static=%images/assets/footer/assets/avatar.jpg")
       
       div.twitter-item__meta
         h4.twitter-item__title Promokit
@@ -194,7 +194,7 @@ mixin twitterItem()
 
 mixin fbAvatarItem()
   li.facebook-avatars__item
-    img.facebook-avatars__avatar-img(src="/static/images/assets/footer/assets/ava-sm.jpg")
+    img.facebook-avatars__avatar-img(src="%=static=%images/assets/footer/assets/ava-sm.jpg")
 
 mixin footerLinksItem(text)
   li.footer-site-links__item

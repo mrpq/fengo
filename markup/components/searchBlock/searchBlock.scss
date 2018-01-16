@@ -37,7 +37,7 @@
   font-size: 36px;
   line-height: 1;
   color: $color-gray-69;
-  background: url("/static/images/assets/searchBlock/logo-bg.png");
+  background: url("%=static=%assets/searchBlock/logo-bg.png");
   text-transform: uppercase;
   background-size: 36px;
   background-repeat: no-repeat;
@@ -87,7 +87,7 @@
 .search-field__submit {
   width: 16px;
   height: 16px;
-  background: url("/static/images/assets/searchBlock/search-icon.png");
+  background: url("%=static=%assets/searchBlock/search-icon.png");
   border: 0;
 }
 

@@ -21,5 +21,5 @@ mixin homepageSlider(data)
 mixin slide(number)
       li.homepage-slider__slides-item
         div.homepage-slider__slide-container
-          img.homepage-slider__image(src="/static/images/assets/homepageSlider/320x178.jpg" alt="slide" + number)
+          img.homepage-slider__image(src="%=static=%images/assets/homepageSlider/320x178.jpg" alt="slide" + number)
           div.homepage-slider__slide-info slide #{number}
