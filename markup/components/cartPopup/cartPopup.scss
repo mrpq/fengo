@@ -30,12 +30,8 @@
   transition: all 0.3s ease;
   &:hover {
     background-color: $color-gray-102;
-    &  .cart-item__delete-cross {
-      color: $color-white;
-    }
   }
 }
-
 .cart-item__delete-cross {
   position: absolute;
   position: absolute;
@@ -51,9 +47,10 @@
   transition: all 0.3s ease;
   // z-index: 5;
 }
-.cart-item__delete-icon::before:hover {
-  color: white;
+.cart-item__delete-icon:hover .cart-item__delete-cross {
+  color: $color-white;
 }
+
 .cart-item__info {
   padding-right: 40px;
   margin-left: 10px;
