@@ -102,7 +102,7 @@ input:checked ~ .main-nav__menu-subcategory-container {
 // }
 @media (min-width: $screen-md) {
   .menu-item:hover > .main-nav__menu-subcategory-container {
-    z-index: 1000;
+    z-index: 30;
     opacity: 1;
     transform: scaleY(1);
     visibility: visible;

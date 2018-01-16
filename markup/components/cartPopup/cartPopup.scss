@@ -30,8 +30,8 @@
   transition: all 0.3s ease;
   &:hover {
     background-color: $color-gray-102;
-    & > .cart-item__delete-cross {
-      color: white;
+    &  .cart-item__delete-cross {
+      color: $color-white;
     }
   }
 }
@@ -39,14 +39,16 @@
 .cart-item__delete-cross {
   position: absolute;
   position: absolute;
-  z-index: 1500;
+  // z-index: 1500;
   top: 50%;
   left: 50%;
   padding: 0;
   font-weight: bold;
   font-size: 10px;
   font-size: 10px;
-  transform: translate(-50%, -47%);
+  line-height: 1;
+  transform: translate(-50%, -55%);
+  transition: all 0.3s ease;
   // z-index: 5;
 }
 .cart-item__delete-icon::before:hover {

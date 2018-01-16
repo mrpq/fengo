@@ -361,12 +361,12 @@
 .twitter-item__reply::before {
   width: 8px;
   height: 13px;
-  background-image: url("/images/footer/twitter/reply-icon.png");
+  background-image: url("%=static=%assets/footer/assets/reply-icon.png");
 }
 .twitter-item__retweet::before {
   width: 14px;
   height: 9px;
-  background-image: url("/images/footer/twitter/retweet-icon.png");
+  background-image: url("%=static=%assets/footer/assets/retweet-icon.png");
 }
 
 .twitter-item__reply,
