@@ -1,0 +1,125 @@
+.advertising-container-wrapper {
+  background-color: $color-gray-246;
+  border-bottom: 1px solid #e9e8e8;
+}
+.content-container--advertising {
+  // background-color: $color-gray-246;
+  padding-top: 17px;
+  padding-bottom: 20px;
+  @media (min-width: $screen-md) {
+    padding-top: 27px;
+    padding-bottom: 30px;
+  }
+  @media (min-width: $screen-lg) {
+    padding-top: 57px;
+    padding-bottom: 60px;
+  }
+}
+.advertising {
+  font-size: 0;
+  @media (min-width: $screen-md) {
+    display: flex;
+  }
+}
+.advertising img {
+  width: 100%;
+}
+.ad-section-container-2 {
+  @media (min-width: $screen-md) {
+    margin-left: 20px;
+  }
+  @media (min-width: $screen-lg) {
+    margin-left: 30px;
+  }
+}
+
+.add-section-2-row-2 {
+  @media (min-width: $screen-md) {
+    margin-top: 20px;
+  }
+  @media (min-width: $screen-md) {
+    margin-top: 30px;
+  }
+}
+.ad-section-3 {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $screen-md) {
+    margin-top: 20px;
+    flex-direction: row;
+  }
+  @media (min-width: $screen-md) {
+    margin-top: 30px;
+  }
+}
+.ad-section-3-col-left {
+  @media (min-width: $screen-md) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.ad-section-3-col-right {
+  @media (min-width: $screen-md) {
+    margin-left: 20px;
+  }
+  @media (min-width: $screen-md) {
+    margin-left: 30px;
+  }
+}
+.add-block-1__img-xs,
+.add-block-2__img-xs,
+.add-block-3__img-xs,
+.add-block-4__img-xs,
+.add-block-5__img-xs,
+.add-block-6__img-xs {
+  @media (min-width: $screen-sm) {
+    display: none;
+  }
+}
+.add-block-1__img-sm,
+.add-block-2__img-sm,
+.add-block-3__img-sm,
+.add-block-4__img-sm,
+.add-block-5__img-sm,
+.add-block-6__img-sm {
+  display: none;
+  @media (min-width: $screen-sm) and (max-width: $screen-md-lt) {
+    display: block;
+  }
+}
+.add-block-1__img-md,
+.add-block-2__img-md,
+.add-block-3__img-md,
+.add-block-4__img-md,
+.add-block-5__img-md,
+.add-block-6__img-md {
+  display: none;
+  @media (min-width: $screen-md) and (max-width: $screen-lg) {
+    display: block;
+  }
+}
+.add-block-1__img-lg,
+.add-block-2__img-lg,
+.add-block-3__img-lg,
+.add-block-4__img-lg,
+.add-block-5__img-lg,
+.add-block-6__img-lg {
+  display: none;
+  @media (min-width: $screen-lg) {
+    display: block;
+  }
+}
+
+[class^="ad-block"][class$="container"] {
+  margin-top: 20px;
+  @media (min-width: $screen-md) {
+    margin-top: 0;
+  }
+}
+
+[class^="ad-block"][class$="container"] .ad-block-1-container {
+  margin-top: 0;
+}
+
+

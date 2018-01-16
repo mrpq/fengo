@@ -1,0 +1,25 @@
+-
+  const menuItems = [
+    { id: 1, label: 'Fasion' },
+    { id: 2, label: 'Electronics' },
+    { id: 3, label: 'Gifts' },
+    { id: 4, label: 'Books' },
+    { id: 5, label: 'At Home' },
+    { id: 6, label: 'Music' },
+    { id: 7, label: 'Sale' },
+  ]
+mixin mainNavMenu(data)
+  nav.main-nav-menu
+    ul.main-nav-menu__list
+      each item in menuItems
+        +menuItem(item)
+
+mixin menuItem(item)
+  li.main-nav__item.menu-item
+    input(id="menu-tab-"+item.id type="checkbox" name="menu-tabs")
+    - const isFirst = item.id === 1
+    label.menu-item__label(for="menu-tab-"+item.id class= isFirst ? "menu-item__label--expandable" : "wefwe") #{item.label}
+    if isFirst
+      .main-nav__menu-subcategory-container.js-menu-item
+        include ../mainNavSubmenu/mainNavSubmenu.pug
+        +mainNavSubmenu()

@@ -1,0 +1,23 @@
+.user-bar-container {
+  @media (min-width: $screen-xl-gt) {
+    background-color: $color-gray-246;
+  }
+}
+
+.user-bar {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1170px;
+  @media (min-width: $screen-md) {
+    display: flex;
+  }
+}
+.user-bar__personal-links {
+  flex-grow: 1;
+}
+.user-bar__controls {
+  display: flex;
+  flex-direction: column;
+  // background-color: red;
+  // justify-content: space-around;
+}

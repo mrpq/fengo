@@ -1,0 +1,12 @@
+mixin personalLinks(data)
+  nav.personal-links
+    ul.personal-links__list
+      li.personal-links__item
+        a.personal-links__link(href=data.item1.link) #{data.item1.text}
+      li.personal-links__item
+        a.personal-links__link(href=data.item2.link) #{data.item2.text}
+      li.personal-links__item
+        a.personal-links__link(href=data.item3.link) #{data.item3.text}
+      li.personal-links__item.personal-links__item--login
+        a.personal-links__link(href=data.item4.link) #{data.item4.text}
+          span.login-long #{data.item4.text_long}

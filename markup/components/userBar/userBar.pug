@@ -1,0 +1,9 @@
+mixin userBar(data)
+  include ./personalLinks/personalLinks.pug
+  include ./userBarControls/userBarControls.pug
+  .user-bar-container
+    .user-bar
+      .user-bar__personal-links
+        +personalLinks(userBar_personalLinks)
+      .user-bar__controls
+        +userBarControls(userBar_userBarControls)

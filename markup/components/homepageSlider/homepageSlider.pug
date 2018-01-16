@@ -1,0 +1,25 @@
+mixin homepageSlider(data)
+  .homepage-slider
+
+    ul.homepage-slider__slides-list.js-homepage-slider
+      +slide(1)
+      +slide(2)
+      +slide(3)
+
+    div.homepage-slider__prev-container
+      button.homepage-slider__arrow.arrow-prev.js-homepage-slider-prev
+      
+    div.homepage-slider__next-container
+      button.homepage-slider__arrow.arrow-next.js-homepage-slider-next
+
+    div.homepage-slider__dots-container
+      ul.homepage-slider__dots-list
+        li.homepage-slider__dots-item.js-homepage-slider-dot-1
+        li.homepage-slider__dots-item.js-homepage-slider-dot-2
+        li.homepage-slider__dots-item.js-homepage-slider-dot-3
+
+mixin slide(number)
+      li.homepage-slider__slides-item
+        div.homepage-slider__slide-container
+          img.homepage-slider__image(src="/static/images/assets/homepageSlider/320x178.jpg" alt="slide" + number)
+          div.homepage-slider__slide-info slide #{number}

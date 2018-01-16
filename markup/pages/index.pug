@@ -1,0 +1,41 @@
+doctype html
+html(class="no-js", lang="ru")
+
+  include ../components/head/head.pug
+  //- 
+  include ../components/userBar/userBar.pug
+  include ../components/searchBlock/searchBlock.pug
+  include ../components/mainNav/mainNav.pug
+  include ../components/homepageSlider/homepageSlider.pug
+  include ../components/advertising/advertising.pug
+  include ../components/products/products.pug
+
+  //- 
+  include ../components/footer/footer.pug
+
+  head
+    +head(head.defaults)
+  body.page
+    |%=symbols=%
+    script(src='%=static=%js/separate-js/siema.min.js')
+
+    section.page__wrapper
+
+      //- Include your components here
+      +userBar()
+      +searchBlock()
+      +mainNav()
+      +homepageSlider()
+      +advertising()
+      +products()
+      .page__buffer
+
+    .page__footer
+      +footer()
+
+    //- script(src='%=static=%js/separate-js/siema.min.js')
+    script(src='%=static=%js/separate-js/svg4everybody.min.js')
+    script svg4everybody();
+
+    //- Main scripts. You can replace it, but I recommend you to leave it here
+    script(src='%=static=%js/main%=hash=%%=min=%.js')

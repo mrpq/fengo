@@ -1,0 +1,37 @@
+mixin cartPopup(data)
+  div.cart-popup
+
+    h4.cart-popup__heading Recently added item(s)
+
+    div.cart-popup__items-container
+      ul.cart-popup__list
+        li.cart-popup__item.cart-item
+          div.cart-item__image
+            img(src="/static/images/assets/cartPopup/img-1-sm.jpg" alt="Mustard yellow ruffle dress")
+          
+          div.cart-item__info
+            div.cart-item__product-name Mustard yellow ruffle dress
+            div.cart-item__price-container
+              span.cart-item__price $478
+              span.cart-item__price.cart-item__price--discount $478
+            div.cart-item__delete-icon
+              div.cart-item__delete-cross &#10005;
+
+    div.cart-popup__totals.cart-totals
+      div.cart-totals__shipping
+        span.cart-totals__label Shipping:
+        span.cart-totals__amount $7
+      
+
+      div.cart-totals__total
+        span.cart-totals__label Total:
+        span.cart-totals__amount $658
+      
+    div.cart-popup__controls.cart-controls
+      div.cart-controls__cart
+        a.cart-controls__link(href="#") Cart
+      
+      div.cart-controls__cart
+        a.cart-controls__link(href="#") Checkout
+      
+    

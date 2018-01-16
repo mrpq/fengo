@@ -1,0 +1,62 @@
+-
+  const submenuItems = [
+    {
+      id: 1, label: 'Clothing', 
+      links: [
+          {link: '#', text: 'Dresses'},
+          {link: '#', text: 'Jeans & Trousers'},
+          {link: '#', text: 'Blouses & Shirts'},
+          {link: '#', text: 'Tops & T-Shirts'},
+          {link: '#', text: 'Skirts'},
+        ]
+    },
+    {
+      id: 2, label: 'Shoes', 
+      links: [
+          {link: '#', text: 'Formal Shoes'},
+          {link: '#', text: 'Casual Shoes'},
+          {link: '#', text: 'Sandals'},
+          {link: '#', text: 'Boots'},
+          {link: '#', text: 'Wide Fit'},
+        ]
+    },
+    {
+      id: 3, label: 'Accesories', 
+      links: [
+          {link: '#', text: 'Bags & Pusrses'},
+          {link: '#', text: 'Belts'},
+          {link: '#', text: 'Gloves'},
+          {link: '#', text: 'Jewellery'},
+          {link: '#', text: 'Sunglasses'},
+        ]
+    },
+    {
+      id: 4, label: 'Sports', 
+      links: [
+          {link: '#', text: 'Sport Tops & Vests'},
+          {link: '#', text: 'Hoodies'},
+          {link: '#', text: 'Swimwear'},
+          {link: '#', text: 'Footwear'},
+          {link: '#', text: 'Sport Underwear'},
+        ]
+    },
+  ]
+mixin mainNavSubmenu(data)
+  .main-nav-submenu
+    ul.subcategory__list
+      each item in submenuItems
+        +submenuItem(item)
+
+mixin submenuItem(item)
+  li.subcategory__item
+    input(id="submenu-tab-"+item.id type="checkbox" name="menu-tabs")
+    label.subcategory__label(for="submenu-tab-"+item.id) #{item.label}
+    .subcategory__links-container
+      ul.subcategory-category__list
+        each i in item.links
+          +subSmenuItem(i)
+
+mixin subSmenuItem(item)
+  li.subcategory-category__item
+    a.subcategory-category__link(href=item.link) #{item.text}
+

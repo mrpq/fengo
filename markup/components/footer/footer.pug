@@ -1,0 +1,201 @@
+mixin footer(data)
+  div.footer-container
+    div.content-container
+      .footer
+        section.footer-top
+          div.footer-top__column-one
+            section.footer-section.footer-about
+              heading.footer-heading
+                h3.footer-heading__title About Fengo Shop
+              img.footer-about__img(src="/static/images/assets/footer/assets/120x120.jpg" alt="About")
+              p.footer-about__text.
+                Morbi pretium odio in dapibus varius. Integer sagittis, tellus ac venenatis venenatis, ipsum ligula auctor lectus,suscipit
+                velit quam quis turpis. Fusce scelerisque aliquet commodo. Sed lobortis laoreet risus vitae tincidunt. Ut consectetur
+                nec purus in egestas. Pellentesque vehicula urna purus.
+              a(href="#").footer-section__cta-link Read more ❯
+
+            section.footer-section
+              heading.footer-heading
+                h3.footer-heading__title From the blog
+                div.footer-heading__slider-controls.footer-slider-controls
+                  button.footer-slider-controls__arrow.arrow-prev.js-from-blog-prev
+                  button.footer-slider-controls__arrow.arrow-next.js-from-blog-next
+              div.footer-from-blog__slider.from-blog-slider.js-from-blog-slider
+                div.from-blog-slider__slide
+                  img.from-blog-slider__image(src="/static/images/assets/footer/assets/img-1-xs.jpg" alt="Blog Slide 1")
+                  p.from-blog-slider__slide-info Pellentesque vehicula urna purus
+                div.from-blog-slider__slide
+                  img.from-blog-slider__image(src="/static/images/assets/footer/assets/img-2-xs.jpg" alt="Blog Slide 2")
+                  p.from-blog-slider__slide-info Lorem ipsum dolor sit amet.
+
+            section.footer-section
+              heading.footer-heading
+                h3.footer-heading__title Quick contact
+              div.footer-contact__map-container
+                iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d386950.6511603643!2d-73.70231446529533!3d40.738882125234106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNueva+York!5e0!3m2!1ses-419!2sus!4v1445032011908" width="600" height="450" frameborder="0" style="border:0")
+              div.footer-contact__form footer-contact-form
+                form
+                  fieldset.footer-contact-form__fieldset
+                    input.footer-contact-form__input(type="text" name="name" id="name" placeholder="Enter your name")
+                  fieldset.footer-contact-form__fieldset
+                    input.footer-contact-form__input(type="email" name="email" id="email" placeholder="Enter your e-mail")
+                  fieldset.footer-contact-form__fieldset
+                    textarea.footer-contact-form__input.footer-contact-form__textarea(name="message" id="message" cols="20" rows="8" placeholder="Enter your message")
+                  button.footer-section__cta-link.footer-contact-form__submit Send message ❯
+
+            section.footer-section
+                div.footer-subscription
+                  form
+                    input.footer-subscription__email(placeholder="Enter your e-mail" type="email" name="email" id="email")
+                    button.footer-subscription__submit ❯
+
+          div.footer-top__column-two
+            section.footer-section
+              heading.footer-heading
+                h3.footer-heading__title Most favorite
+                div.footer-heading__slider-controls.footer-slider-controls
+                  button.footer-slider-controls__arrow.arrow-prev.js-favorite-prev
+                  button.footer-slider-controls__arrow.arrow-next.js-favorite-next
+              div.footer-favorite__slider.favorite-slideu.js-favorite-slider
+                +favoriteSlide()
+                +favoriteSlide()
+                +favoriteSlide()
+                +favoriteSlide()
+                    
+
+            section.footer-section
+              heading.footer-heading
+                h3.footer-heading__title Twitter
+                a.footer-heading__social-cta(href="#") Follow
+              div.footer-twitter
+                div.footer-twitter__list
+                  +twitterItem()
+                  +twitterItem()
+
+            section.footer-section
+              heading.footer-heading
+                h3.footer-heading__title Facebook
+                a.footer-heading__social-cta(href="#") Like
+              
+              div.footer-facebook
+                div.footer-facebook__like-stat
+                  | 1452 people like
+                  a.footer-text-link(href="#") PromoKit
+                div.footer-facebook__avatars facebook-avatars
+                  ul.facebook-avatars__list
+                    +fbAvatarItem()
+                    +fbAvatarItem()
+                    +fbAvatarItem()
+                  ul.facebook-avatars__list
+                    +fbAvatarItem()
+                    +fbAvatarItem()
+                    +fbAvatarItem()
+          
+          div.footer-top__column-three
+            section.footer-section
+              heading.footer-heading
+                h3.footer-heading__title Information
+              div.footer-site-links
+                ul.footer-site-links__list
+                  +footerLinksItem("New products")
+                  +footerLinksItem("Top sellers")
+                  +footerLinksItem("Specials products")
+                  +footerLinksItem("Manufacturers")
+                  +footerLinksItem("Suppliers")
+                  +footerLinksItem("Our stores")
+
+
+            section.footer-section
+              heading.footer-heading
+                h3.footer-heading__title My Account
+              div.footer-site-links
+                ul.footer-site-links__list
+                  +footerLinksItem("My account")
+                  +footerLinksItem("Personal information")
+                  +footerLinksItem("Addresses")
+                  +footerLinksItem("Discount")
+                  +footerLinksItem("Orders history")
+                  +footerLinksItem("Your Vouchers")
+
+            section.footer-section
+              heading.footer-heading
+                h3.footer-heading__title Customer service
+              div.footer-site-links
+                ul.footer-site-links__list
+                  +footerLinksItem("Help & contact")
+                  +footerLinksItem("Shipping & taxes")
+                  +footerLinksItem("Return policy")
+                  +footerLinksItem("Careers")
+                  +footerLinksItem("Affiliates")
+                  +footerLinksItem("Legal Notice")
+
+            section.footer-section
+              heading.footer-heading
+                h3.footer-heading__title Contact Info
+              p.footer-contact-info-para Vigo Shop Ltd
+              p.footer-contact-info-para United Kingdom
+              p.footer-contact-info-para London 02587
+              p.footer-contact-info-para Oxford Street 48/188
+              p.footer-contact-info-para Working days: mon. - sun.
+              p.footer-contact-info-para 9 AM - 8 PM
+
+        section.footer-section
+          div.bottom-col-1
+            ul.cc__list
+              li.cc__item.bg-cc_discover
+              li.cc__item.bg-cc_amex
+              li.cc__item.bg-cc_visa
+              li.cc__item.bg-cc_master
+              li.cc__item.bg-cc_pp
+              li.cc__item.bg-cc_maestro
+ 
+          div.bottom-col-2
+          p.footer-copyright © 2013 Powered by WooCommerce™. All Rights Reserved.
+          div.footer-jump-top-container
+            a.homepage-slider__arrow.arrow-prev.footer-jump-top(href="#") 
+          
+        
+mixin favoriteSlide()
+  div.favorite-slider__slide
+    img.favorite-slider__slide-image(src="/static/images/assets/footer/assets/fav-1-xs.jpg" alt="Blog Slide 1")
+    div.favorite-slider__slide-info.favorite-side-info
+      p.favorite-slide-info__product-name
+        a.favorite-slide-info__product-link(href="#")
+          Black puplum waisttie kudu dress
+        
+      div.favourite-slide-info__product-price-container
+        span.favourite-slide-info__product-price.favourite-slide-info__product-price--discount $250
+        span.favourite-slide-info__product-price $250      
+            
+mixin twitterItem()
+  article.footer-twitter__item twitter-item
+    heading.twitter-item__heading
+      div.twitter-item__avatar
+        img(src="/static/images/assets/footer/assets/avatar.jpg")
+      
+      div.twitter-item__meta
+        h4.twitter-item__title Promokit
+        span.twitter-item__username @user_1
+      
+    
+    div.twitter-item__body
+      p.twitter-item__body-text
+        | Vivamus id quam quis velit semper adipiscing nec in libero. Praesent quis lectus at justo ornare laoreet. Proin
+        | luctus viverra
+        a.footer-text-link(href="#") bit.ly/1byZ6QM
+      
+    
+    footer.twitter-item__footer
+      div.twitter-item__date 9 october 2017
+      div.twitter-item__footer-link
+      div.twitter-item__footer-controls
+        a.twitter-item__reply Reply
+        a.twitter-item__retweet Retweet
+
+mixin fbAvatarItem()
+  li.facebook-avatars__item
+    img.facebook-avatars__avatar-img(src="/static/images/assets/footer/assets/ava-sm.jpg")
+
+mixin footerLinksItem(text)
+  li.footer-site-links__item
+    a.footer-site-links__link(href="#") #{text}

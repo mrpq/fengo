@@ -1,0 +1,38 @@
+mixin products(data)
+  div.content-container
+    div.products-container
+      section.products
+
+        div.products__navigation-container
+
+          div.product-block__navigation.product-navigation
+            ul.product-navigation__list
+              li.product-navigation__item.product-navigation__item--active
+                a.product-navigation__link.product-navigation__link--active(href="#") New Arrivals
+              li.product-navigation__item
+                a.product-navigation__link(href="#") Featured
+              li.product-navigation__item
+                a.product-navigation__link(href="#") Bestsellers
+              li.product-navigation__item
+                a.product-navigation__link(href="#") Special
+
+        div.products__list-container
+          div.products__list
+            include ../productBlock/productBlock.pug
+            div.products__item
+              +productBlock()
+            div.products__item
+              +productBlock()
+            div.products__item
+              +productBlock()
+            div.products__item
+              +productBlock()
+            div.products__item
+              +productBlock()
+            div.products__item
+              +productBlock()
+
+            div.products__item.products__item--lg-screen
+              +productBlock()
+            div.products__item.products__item--lg-screen
+              +productBlock()

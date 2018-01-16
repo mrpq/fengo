@@ -1,0 +1,31 @@
+mixin userBarControls(data)
+  nav.user-bar-controls
+    ul.user-bar-controls__list
+      
+      li.user-bar-controls__item.controls-dropdown
+        a.user-bar-controls__link.controls-dropdown__label.controls-dropdown__label--currency(href="#") US Dollar
+        ul.controls-dropdown__list
+          +dropdownItem({text: 'Euro', link: "#"})
+          +dropdownItem({text: 'Pound', link: "#"})           
+
+      li.user-bar-controls__item.controls-dropdown
+        a.user-bar-controls__link.controls-dropdown__label.controls-dropdown__label--language(href="#") English
+        ul.controls-dropdown__list
+          +dropdownLanguageItem({text: 'Italian', link: "#", icon: "icon-flag-it"})
+          +dropdownLanguageItem({text: 'Spanish', link: "#", icon: "icon-flag-es"})
+          +dropdownLanguageItem({text: 'French', link: "#", icon: "icon-flag-fr"})
+          +dropdownLanguageItem({text: 'German', link: "#", icon: "icon-flag-de"})
+      
+      li.user-bar-controls__item
+        a.user-bar-controls__link.user-bar-controls__link--cart(href="#") My bag: 0 item(s)
+        .main-nav__cart-popup-container.js-cart-popup
+          include ../../cartPopup/cartPopup.pug
+          +cartPopup()
+
+mixin dropdownItem(data)
+  li.controls-dropdown__currency-item
+    a.controls-dropdown__link(href=data.link)= data.text 
+
+mixin dropdownLanguageItem(data)
+  li.controls-dropdown__language-item
+    a.controls-dropdown__link.controls-dropdown__link--language(href=data.link class=data.icon)= data.text

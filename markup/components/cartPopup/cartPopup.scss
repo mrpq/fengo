@@ -1,0 +1,134 @@
+.cart-popup {
+  padding: 20px;
+}
+.cart-popup__heading {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.28571;
+  font-family: Arial, Helvetica, sans-serif;
+  color: $color-gray-126;
+}
+.cart-popup__items-container {
+  margin-top: 17px;
+}
+.cart-item {
+  position: relative;
+  display: flex;
+}
+
+.cart-item__delete-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 17px;
+  height: 17px;
+  color: $color-gray-102;
+  border: 1px solid $color-gray-102;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: $color-gray-102;
+    & > .cart-item__delete-cross {
+      color: white;
+    }
+  }
+}
+
+.cart-item__delete-cross {
+  position: absolute;
+  position: absolute;
+  z-index: 1500;
+  top: 50%;
+  left: 50%;
+  padding: 0;
+  font-weight: bold;
+  font-size: 10px;
+  font-size: 10px;
+  transform: translate(-50%, -47%);
+  // z-index: 5;
+}
+.cart-item__delete-icon::before:hover {
+  color: white;
+}
+.cart-item__info {
+  padding-right: 40px;
+  margin-left: 10px;
+}
+.cart-item__product-name {
+  font-size: 13px;
+  line-height: 1.30769;
+  color: $color-gray-68;
+}
+.cart-item__price-container {
+  margin-top: 7px;
+}
+.cart-item__price {
+  font-size: 13px;
+  line-height: 1.30769;
+  font-family: $font-secondary;
+  color: $color-gray-27;
+}
+.cart-item__price--discount {
+  margin-left: 5px;
+  color: $color-gray-153;
+  text-decoration: line-through;
+}
+
+.cart-popup__totals {
+  margin-top: 13px;
+}
+.cart-totals {
+  display: flex;
+  font-size: 13px;
+  line-height: 1.38461;
+  font-family: $font-secondary;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.cart-totals__label {
+  color: $color-gray-102;
+}
+.cart-totals__amount {
+  color: $color-gray-27;
+}
+
+.cart-popup__controls {
+  margin-top: 7px;
+}
+
+.cart-controls {
+  position: relative;
+  display: flex;
+  border: 2px solid $color-gray-68;
+}
+.cart-controls::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 16px;
+  background-color: $color-gray-68;
+  transform: translate(-50%, -50%);
+  content: "";
+}
+.cart-controls > * {
+  text-align: center;
+  flex: 1;
+}
+.cart-controls__link {
+  display: block;
+  padding: 7px 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.214285;
+  color: $color-gray-68;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  &:hover {
+    color: $color-blood;
+  }
+}
+

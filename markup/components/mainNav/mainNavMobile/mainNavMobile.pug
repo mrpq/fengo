@@ -1,0 +1,16 @@
+mixin mainNavMobile(data)
+  .main-nav-mobile
+    .nav-heading__burger.js-nav-heading-burger
+      .burger-top
+      .burger-middle
+      .burger-bottom
+    
+    .nav-heading__title Navigation
+
+    .nav-heading__cart-container
+      .nav-heading__cart
+        .nav-heading__cart-total $648
+
+      .main-nav__cart-popup-container.js-cart-popup
+        include ../../cartPopup/cartPopup.pug
+        +cartPopup()

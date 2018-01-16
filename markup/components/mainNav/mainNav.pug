@@ -1,0 +1,10 @@
+mixin mainNav(data)
+  .content-container
+    .main-nav-container
+      .main-nav
+        .main-nav__main-nav-mobile-container
+          include ./mainNavMobile/mainNavMobile.pug
+          +mainNavMobile()
+        .main-nav__menu-container.js-header-menu
+          include ./mainNavMenu/mainNavMenu.pug
+          +mainNavMenu()

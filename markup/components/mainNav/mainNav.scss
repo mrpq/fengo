@@ -1,0 +1,85 @@
+.main-nav-container {
+  @media (min-width: $screen-lg) {
+    margin-left: auto;
+  }
+}
+.main-nav {
+  position: relative;
+  z-index: 10; // to make it visible above slider
+}
+.main-nav__main-nav-mobile-container {
+  display: block;
+  @media (min-width: $screen-md) {
+    display: none;
+  }
+}
+.main-nav__menu-container {
+  position: absolute;
+  // display: none;
+  z-index: 10;
+  right: 0;
+  left: 0;
+  background-color: $color-white;
+  opacity: 0;
+  transform: scaleY(0);
+  transition: all ease 0.5s;
+  //animation
+  visibility: hidden;
+  max-height: 0;
+  transform-origin: top;
+  @media (min-width: $screen-md) {
+    position: static;
+    display: block;
+    opacity: 1;
+    transform: scaleY(1);
+    visibility: visible;
+    max-height: 1000px;
+  }
+}
+.main-nav__menu-container--active {
+  opacity: 1;
+  transform: scaleY(1);
+  transition: all ease 0.5s;
+  // display: block;
+  //animation
+  visibility: visible;
+  max-height: 1000px;
+}
+
+// popup container
+.main-nav__cart-popup-container {
+  position: absolute;
+  z-index: 200;
+  top: 37px;
+  right: -10px;
+  left: -10px;
+  background-color: $color-white;
+  border: 1px solid $color-gray-182;
+  //animation
+  opacity: 0;
+  transform: scaleY(0);
+  transition: all ease 0.5s;
+  transform-origin: top;
+  visibility: hidden;
+  max-height: 0;
+  @media (min-width: $screen-md) {
+    top: 28px;
+    right: 0;
+    left: auto;
+    width: 300px;
+  }
+}
+.nav-heading__cart-container {
+  height: 100%;
+  //styles to preven cart popup disappear on mouseout
+  padding-top: 10px;
+}
+.nav-heading__cart-container:hover .main-nav__cart-popup-container {
+  opacity: 1;
+  transform: scaleY(1);
+  transition: all ease 0.5s;
+  //animation
+  visibility: visible;
+  max-height: 1000px;
+}
+

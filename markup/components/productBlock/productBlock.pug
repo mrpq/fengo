@@ -1,0 +1,46 @@
+mixin productBlock(data)
+  div.product-block
+    div.product-block__slider.product-slider
+      div.product-slider__images-container
+        div.product-slider__images.js-siema-product
+          img(src="/static/images/assets/productBlock/product-img-1.jpg" alt="Product Image 1")
+          img(src="/static/images/assets/productBlock/product-img-2.jpg" alt="Product Image 2")
+          img(src="/static/images/assets/productBlock/product-img-3.jpg" alt="Product Image 3")
+      div.product-slider__controls-container
+        ul.product-slider__controls.product-slider-controls
+          li.product-slider-controls__item
+          li.product-slider-controls__item
+          li.product-slider-controls__item
+
+    div.product-block__product-info.product-info-rows
+      div.product-info-rows__row-1
+        div.product-block__product-name-container
+          div.product-block__product-name
+            a.product-block__product-link(href="#") Product Name
+        div.product-block__product-price-container
+          p.product-block__product-price $110
+          p.product-block__product-price.product-block__product-price--discount $180
+      div.product-info-rows__row-2
+        div.product-block__ad-to-bag
+          a.product-block__large-link(href="#") Add to bag
+        div.product-block__more-info
+          a.product-block__large-link(href="#") More info
+      div.product-info-rows__row-3
+        div.product-block__ad-to-bag
+          a.product-block__cursive-link(href="#") + Add to wishlist
+        div.product-block__more-info
+          a.product-block__cursive-link(href="#") + Add to compare
+      div.product-block__discount-label-container
+        div.product-block__discount-label -50%
+    div.product-block__product-star-rating-container
+      div.product-star-rating
+          input(type="radio" id="star5" name="rating" value="5")
+          label(for="star5" title="Rocks!") 5 stars
+          input(type="radio" id="star4" name="rating" value="4")
+          label(for="star4" title="Pretty good") 4 stars
+          input(type="radio" id="star3" name="rating" value="3")
+          label(for="star3" title="Meh") 3 stars
+          input(type="radio" id="star2" name="rating" value="2")
+          label(for="star2" title="Kinda bad") 2 stars
+          input(type="radio" id="star1" name="rating" value="1")
+          label(for="star1" title="Sucks big time") 1 star
