@@ -5,6 +5,7 @@ const initHomePageSlider = () => {
     let siemaHomePageSlider = new Siema({
       selector: ".js-homepage-slider"
     });
+    if (!siemaHomePageSlider) return;
     document
       .querySelector(".js-homepage-slider-prev")
       .addEventListener("click", () => siemaHomePageSlider.prev());
@@ -19,5 +20,4 @@ const initHomePageSlider = () => {
     console.log(e);
   }
 };
-window.addEventListener('load', initHomePageSlider);
-initHomePageSlider();
+window.addEventListener('DOMContentLoaded', initHomePageSlider);

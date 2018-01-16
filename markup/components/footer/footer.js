@@ -1,8 +1,6 @@
-// import Siema from 'siema';
 var Siema;
 const fromBlogSliderInit = () => {
   const fromBlogSlider = document.querySelector(".js-from-blog-slider");
-  console.log("Hello");
   if (!fromBlogSlider) return;
   const prev = document.querySelector(".js-from-blog-prev");
   const next = document.querySelector(".js-from-blog-next");
@@ -28,7 +26,5 @@ const favSliderInit = () => {
   next.addEventListener("click", () => siema.next());
 };
 
-window.addEventListener('load', fromBlogSliderInit);
-fromBlogSliderInit();
-window.addEventListener('load', favSliderInit);
-favSliderInit();
+window.addEventListener('DOMContentLoaded', fromBlogSliderInit);
+window.addEventListener('DOMContentLoaded', favSliderInit);

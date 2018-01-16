@@ -137,7 +137,11 @@ input:checked ~ .subcategory__label::before {
 .subcategory-category__list {
   padding: 0;
   margin: 0;
+  background-color: $color-gray-246;
   list-style-type: none;
+  @media (min-width: $screen-md) {
+    background-color: transparent;
+  }
 }
 
 .subcategory-category__link {

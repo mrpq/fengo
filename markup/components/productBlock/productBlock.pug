@@ -1,16 +1,16 @@
-mixin productBlock(data)
+mixin productBlock(id)
   div.product-block
     div.product-block__slider.product-slider
       div.product-slider__images-container
-        div.product-slider__images.js-siema-product
+        div.product-slider__images.js-siema-product(class= "js-product-slides-" + id)
           img(src="/static/images/assets/productBlock/product-img-1.jpg" alt="Product Image 1")
           img(src="/static/images/assets/productBlock/product-img-2.jpg" alt="Product Image 2")
           img(src="/static/images/assets/productBlock/product-img-3.jpg" alt="Product Image 3")
       div.product-slider__controls-container
         ul.product-slider__controls.product-slider-controls
-          li.product-slider-controls__item
-          li.product-slider-controls__item
-          li.product-slider-controls__item
+          li.product-slider-controls__item(class= "js-product-slides-controls-" + id + "0")
+          li.product-slider-controls__item(class= "js-product-slides-controls-" + id + "1")
+          li.product-slider-controls__item(class= "js-product-slides-controls-" + id + "2")
 
     div.product-block__product-info.product-info-rows
       div.product-info-rows__row-1
