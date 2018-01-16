@@ -33,7 +33,7 @@ mixin footer(data)
                 h3.footer-heading__title Quick contact
               div.footer-contact__map-container
                 iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d386950.6511603643!2d-73.70231446529533!3d40.738882125234106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNueva+York!5e0!3m2!1ses-419!2sus!4v1445032011908" width="600" height="450" frameborder="0" style="border:0")
-              div.footer-contact__form footer-contact-form
+              div.footer-contact__form.footer-contact-form
                 form
                   fieldset.footer-contact-form__fieldset
                     input.footer-contact-form__input(type="text" name="name" id="name" placeholder="Enter your name")
@@ -168,7 +168,7 @@ mixin favoriteSlide()
         span.favourite-slide-info__product-price $250      
             
 mixin twitterItem()
-  article.footer-twitter__item twitter-item
+  article.footer-twitter__item.twitter-item
     heading.twitter-item__heading
       div.twitter-item__avatar
         img(src="%=static=%images/assets/footer/assets/avatar.jpg")
