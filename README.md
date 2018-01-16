@@ -1,6 +1,7 @@
 <p align="right">
 English description | <a href="README_RU.md">Описание на русском</a>
 </p>
+<a href="builds/build_ver-Tue_Jan_16_2018_15_24_05/index.html">Build</a>
 
 # ![Tars](https://raw.githubusercontent.com/artem-malko/artwork/master/tars/logo.png)
 
