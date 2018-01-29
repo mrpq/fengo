@@ -1,6 +1,6 @@
 ### Верстка главной страницы интернет магазина по макету
 
-<a href="builds/build_ver-Tue_Jan_16_2018_15_24_05/index.html">Демо</a>
+<a href="https://mrpq.github.io/fengo/builds/build_ver-Tue_Jan_16_2018_19_53_15/index.html">Демо</a>
 
 <p align="right">
 English description | <a href="README_RU.md">Описание на русском</a>
